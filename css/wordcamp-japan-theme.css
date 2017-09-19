@@ -1,0 +1,10 @@
+.site-main {
+  padding: 0;
+}
+
+.hentry,
+.hentry + .hentry,
+.page-header + .hentry,
+.page-header + .page-content {
+  margin: 10px;
+}
