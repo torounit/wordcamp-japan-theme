@@ -13,6 +13,7 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
+git fetch
 git checkout master
 git add -f ./css
 git commit -m "Update from travis $TRAVIS_COMMIT"
