@@ -1,10 +1,8 @@
-.site-main {
-  padding: 0;
-}
+@charset "UTF-8";
 
-.hentry,
-.hentry + .hentry,
-.page-header + .hentry,
-.page-header + .page-content {
-  margin: 10px;
+// todo need change.
+body,
+.site-content-contain {
+	background-color: #0073aa;
+	color: #FFF;
 }
