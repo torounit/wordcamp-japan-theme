@@ -13,6 +13,7 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
+git remote set-branches origin develop master
 git fetch
 git checkout master
 git add -f ./css
