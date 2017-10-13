@@ -17,8 +17,8 @@
   "homepage": "https://github.com/jawordpressorg/wordcamp-japan-theme#readme",
   "scripts": {
     "build": "npm run scss && npm run postcss",
-    "scss": "node-sass ./scss/wordcamp-japan-theme.scss -o ./css/",
-    "postcss": "postcss ./css/wordcamp-japan-theme.css --use autoprefixer -o ./css/wordcamp-japan-theme.css"
+    "scss": "node-sass ./scss/ -o ./css/",
+    "postcss": "postcss ./css/**/*.css --use autoprefixer -d ./css/"
   },
   "devDependencies": {
     "autoprefixer": "7.1.5",
