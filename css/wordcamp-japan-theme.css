@@ -1,0 +1,10 @@
+.site-main {
+  padding: 0; }
+
+.hentry,
+.hentry + .hentry,
+.page-header + .hentry,
+.page-header + .page-content {
+  margin: 10px; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndvcmRjYW1wLWphcGFuLXRoZW1lLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVcsRUFBRTs7QUFFZjs7OztFQUlFLGFBQWEsRUFBRSIsImZpbGUiOiJ3b3JkY2FtcC1qYXBhbi10aGVtZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2l0ZS1tYWluIHtcbiAgcGFkZGluZzogMDsgfVxuXG4uaGVudHJ5LFxuLmhlbnRyeSArIC5oZW50cnksXG4ucGFnZS1oZWFkZXIgKyAuaGVudHJ5LFxuLnBhZ2UtaGVhZGVyICsgLnBhZ2UtY29udGVudCB7XG4gIG1hcmdpbjogMTBweDsgfVxuIl19 */
