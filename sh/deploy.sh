@@ -15,6 +15,8 @@ fi
 
 git clone -b master --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" master
 cp -R ./css/ ./master/css
+cp style.css ./master/
+cp *.php ./master/
 cd master
 git add -f ./css
 git commit -m "Update from travis $TRAVIS_COMMIT"
