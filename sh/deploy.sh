@@ -14,7 +14,7 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 fi
 
 git clone -b master --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" master
-cp -R ./css/ ./master/css
+cp -R ./css/*.css ./master/css/
 cp style.css ./master/
 cp *.php ./master/
 cd master
