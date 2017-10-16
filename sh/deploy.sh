@@ -13,9 +13,9 @@ if [[ "develop" != "$TRAVIS_BRANCH" ]]; then
 	exit
 fi
 
-git remote set-branches origin develop master
-git fetch
-git checkout master
+git clone -b master --quiet "https://github.com/${TRAVIS_REPO_SLUG}.git" master
+cp -R ./css/ ./master/css
+cd master
 git add -f ./css
 git commit -m "Update from travis $TRAVIS_COMMIT"
 git push --quiet "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git" master 2> /dev/null
