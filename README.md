@@ -1,5 +1,5 @@
 # wordcamp-japan-theme
-Twenty Fifteen Child Theme.
+Twenty Seventeen Child Theme.
 
 ## URL
 https://japan.wordcamp.org/
