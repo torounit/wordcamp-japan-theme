@@ -6,7 +6,7 @@
  */
 
 /**
- * Enqueue stylesheets.
+ * Add stylesheets.
  */
 function wordcamp_japan_theme_style() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
