@@ -1,0 +1,28 @@
+{
+  "name": "wordcamp-japan-theme",
+  "version": "0.0.1",
+  "description": "WordCamp Japan Site Theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawordpressorg/wordcamp-japan-theme.git"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/jawordpressorg/wordcamp-japan-theme/issues"
+  },
+  "homepage": "https://github.com/jawordpressorg/wordcamp-japan-theme#readme",
+  "scripts": {
+    "build": "npm run scss && npm run postcss",
+    "scss": "node-sass ./scss/ -o ./css/",
+    "postcss": "postcss ./css/**/*.css --use autoprefixer -d ./css/"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.5",
+    "node-sass": "4.5.3",
+    "postcss-cli": "4.1.1"
+  }
+}

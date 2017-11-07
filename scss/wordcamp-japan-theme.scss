@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+$viewportSP: 48em;
+$viewportTB: 768px;
+$viewportPC: 1024px;
+
+.navigation-top {
+	border: none;
+
+	@media screen and (min-width: $viewportSP) {
+		top: 140px;
+		right: auto;
+		bottom: auto;
+		left: 0;
+		width: 100%;
+		z-index: 99;
+		background: none;
+	}
+
+	@media screen and (min-width: $viewportPC) {
+		overflow: visible;
+		width: auto;
+	}
+
+	nav {
+		@media screen and (min-width: $viewportSP) {
+			margin-left: 0;
+		}
+	}
+
+	a {
+		font-weight: normal;
+	}
+
+	.current-menu-item > a,
+	.current_page_item > a {
+		color: #00c5be;
+		font-weight: bold;
+	}
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+
+	.navigation-top & {
+		padding: 0;
+	}
+}
+
+.main-navigation {
+	@media screen and (min-width: $viewportPC) {
+		width: auto;
+	}
+
+	a {
+		@media screen and (min-width: $viewportSP) {
+			padding: 10px;
+		}
+	}
+
+	.menu-item-has-children > a > .icon,
+	.page_item_has_children > a > .icon {
+		@media screen and (min-width: $viewportSP) {
+			display: none;
+		}
+	}
+
+	.js & {
+		ul {
+			@media screen and (min-width: $viewportSP) {
+				display: block;
+			}
+		}
+
+		.sub-menu {
+			display: block;
+		}
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+
+	ul {
+		ul {
+			@media screen and (min-width: $viewportSP) {
+				position: static;
+				border: none;
+				background: transparent;
+			}
+
+			a {
+				&::before {
+					content: '-';
+					padding-right: 10px;
+				}
+
+				@media screen and (min-width: $viewportSP) {
+					width: auto;
+					padding: 5px 10px 5px 15px;
+				}
+			}
+		}
+
+		li {
+			&:hover {
+				> ul {
+					position: static;
+				}
+			}
+		}
+
+		li.menu-item-has-children {
+			&::before,
+			&::after {
+				content: normal;
+			}
+		}
+	}
+
+	li {
+		border: none;
+
+		@media screen and (min-width: $viewportSP) {
+			display: block;
+		}
+	}
+}
