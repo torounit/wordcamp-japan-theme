@@ -5,6 +5,6 @@ $viewport48em: 48em;
 $viewportTB: 768px;
 $viewportPC: 1024px;
 
-@import "parts/_container";
-@import "parts/_header";
-@import "parts/_navigation";
+@import "parts/_container.scss";
+@import "parts/_header.scss";
+@import "parts/_navigation.scss";
