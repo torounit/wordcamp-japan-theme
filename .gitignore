@@ -1,7 +1,2 @@
-package.json
-package-lock.json
-/scss
-/sh
-/node_modules
-.travis.yml
-.node-version
+node_modules
+css

@@ -1,0 +1,141 @@
+.navigation-top {
+	border: none;
+
+	@media screen and (min-width: $viewport30em) {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+
+	@media screen and (min-width: $viewport48em) {
+		width: 30%;
+		max-width: 1000px;
+		top: 140px;
+		right: auto;
+		bottom: auto;
+		left: 0;
+		z-index: 99;
+		background: none;
+		padding: 0;
+	}
+
+	@media screen and (min-width: $viewportPC) {
+		overflow: visible;
+		width: 300px;
+		margin-left: 0;
+		padding: 0;
+		position: absolute;
+	}
+
+	&.site-navigation-fixed {
+		@media screen and (min-width: $viewport48em) {
+			position: absolute;
+		}
+	}
+
+	nav {
+		@media screen and (min-width: $viewport48em) {
+			margin-left: 0;
+		}
+	}
+
+	a {
+		font-weight: normal;
+	}
+
+	.current-menu-item > a,
+	.current_page_item > a {
+		color: #00c5be;
+		font-weight: bold;
+	}
+}
+
+.wrap {
+	margin-left: auto;
+	margin-right: auto;
+
+	.navigation-top & {
+		padding: 0;
+	}
+}
+
+.main-navigation {
+	@media screen and (min-width: $viewportPC) {
+		width: auto;
+	}
+
+	a {
+		@media screen and (min-width: $viewport48em) {
+			padding: 10px;
+		}
+	}
+
+	.menu-item-has-children > a > .icon,
+	.page_item_has_children > a > .icon {
+		@media screen and (min-width: $viewport48em) {
+			display: none;
+		}
+	}
+
+	.js & {
+		ul {
+			@media screen and (min-width: $viewport48em) {
+				display: block;
+			}
+		}
+
+		.sub-menu {
+			display: block;
+		}
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+
+	ul {
+		ul {
+			@media screen and (min-width: $viewport48em) {
+				position: static;
+				border: none;
+				background: transparent;
+			}
+
+			a {
+				display: flex;
+
+				&::before {
+					content: '-';
+					padding-right: 10px;
+				}
+
+				@media screen and (min-width: $viewport48em) {
+					width: auto;
+					padding: 5px 10px 5px 15px;
+				}
+			}
+		}
+
+		li {
+			&:hover {
+				> ul {
+					position: static;
+				}
+			}
+		}
+
+		li.menu-item-has-children {
+			&::before,
+			&::after {
+				content: normal;
+			}
+		}
+	}
+
+	li {
+		border: none;
+
+		@media screen and (min-width: $viewport48em) {
+			display: block;
+		}
+	}
+}
