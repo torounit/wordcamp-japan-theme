@@ -1,0 +1,30 @@
+.site {
+	@media screen and (min-width: $viewport48em) {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	@media screen and (min-width: $viewportPC) {
+		width: 1100px;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+.site-content-contain {
+	@media screen and (min-width: $viewport48em) {
+		margin-left: 31%;
+	}
+
+	@media screen and (min-width: $viewportPC) {
+		margin-left: 350px;
+	}
+}
+
+.panel-content {
+	.wrap {
+		@media screen and (min-width: $viewport48em) {
+			padding: 0;
+		}
+	}
+}
