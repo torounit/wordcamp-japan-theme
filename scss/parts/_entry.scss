@@ -1,0 +1,20 @@
+.entry-title {
+	.page .panel-content &,
+	body.page:not(.twentyseventeen-front-page) & {
+		font-size: 1.2rem;
+		font-weight: normal;
+		color: #ccc;
+	}
+}
+
+.page-title {
+	@extend .entry-title;
+}
+
+#content {
+	.page:not(.home) & {
+		@media screen and (min-width: $viewport48em) {
+			padding-top: 0;
+		}
+	}
+}
