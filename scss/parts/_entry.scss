@@ -1,8 +1,14 @@
 .entry-title {
 	.page .panel-content &,
-	body.page:not(.twentyseventeen-front-page) & {
+	body.page:not(.twentyseventeen-front-page) &,
+	.single-post &,
+	.page & {
 		font-size: 1.2rem;
 		font-weight: normal;
+		color: #ccc;
+	}
+
+	a {
 		color: #ccc;
 	}
 }
@@ -17,4 +23,22 @@
 			padding-top: 0;
 		}
 	}
+}
+
+.blog:not(.has-sidebar) #primary article,
+.archive:not(.page-one-column):not(.has-sidebar) #primary article,
+.search:not(.has-sidebar) #primary article,
+.error404:not(.has-sidebar) #primary .page-content,
+.error404.has-sidebar #primary .page-content,
+body.page-two-column:not(.archive) #primary .entry-content,
+body.page-two-column #comments {
+	@media screen and (min-width: $viewport48em) {
+		float: none;
+		width: auto;
+	}
+}
+
+.single-featured-image-header {
+	background: none;
+	border-bottom: none;
 }
