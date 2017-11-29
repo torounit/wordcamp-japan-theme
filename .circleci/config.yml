@@ -49,6 +49,7 @@ jobs:
       # Store
       - store_artifacts:
           path: artifacts
+          destination: artifact-file
 
 workflows:
   version: 2
