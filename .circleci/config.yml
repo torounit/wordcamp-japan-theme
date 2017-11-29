@@ -41,6 +41,7 @@ jobs:
           name: Access WordPress
           command: curl http://localhost > /dev/null
 
+      # screenshots
       - run:
           name: Take screenshots.
           command: node ./screenshot.js
