@@ -49,15 +49,6 @@
 	}
 }
 
-.wrap {
-	margin-left: auto;
-	margin-right: auto;
-
-	.navigation-top & {
-		padding: 0;
-	}
-}
-
 .main-navigation {
 	@media screen and (min-width: $viewportPC) {
 		width: auto;
@@ -136,6 +127,29 @@
 
 		@media screen and (min-width: $viewport48em) {
 			display: block;
+		}
+
+		li {
+			&:hover,
+			&.focus {
+				@media screen and (min-width: $viewport48em) {
+					background: none;
+				}
+			}
+
+			&.focus > a,
+			&:focus > a,
+			&:hover > a,
+			a:hover,
+			a:focus,
+			&.current_page_item a:hover,
+			&.current-menu-item a:hover,
+			&.current_page_item a:focus,
+			&.current-menu-item a:focus {
+				@media screen and (min-width: $viewport48em) {
+					color: #767676;
+				}
+			}
 		}
 	}
 }
