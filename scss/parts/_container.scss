@@ -1,3 +1,28 @@
+.wrap {
+	@media screen and (min-width: $viewport48em) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.navigation-top & {
+		padding: 0;
+	}
+
+	.site-branding & {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+
+		@media screen and (min-width: $viewportPC) {
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+		}
+	}
+}
+
 .site {
 	@media screen and (min-width: $viewport48em) {
 		width: 100%;
@@ -11,13 +36,26 @@
 	}
 }
 
-.site-content-contain {
+.site-content-contain,
+.single-featured-image-header {
 	@media screen and (min-width: $viewport48em) {
 		margin-left: 31%;
 	}
 
 	@media screen and (min-width: $viewportPC) {
 		margin-left: 350px;
+	}
+}
+
+.single-featured-image-header {
+	@media screen and (min-width: $viewport48em) {
+		margin-bottom: 30px;
+	}
+}
+
+.site-content {
+	@media screen and (min-width: $viewport48em) {
+		padding-top: 0;
 	}
 }
 
